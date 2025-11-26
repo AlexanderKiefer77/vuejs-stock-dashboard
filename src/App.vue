@@ -1,9 +1,11 @@
 <template>
+<div id="app">
+</div>
 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
@@ -14,7 +16,15 @@ export default {
 </script>
 
 <style>
+body {
+  margin: 0;
+}
+
 #app {
+  background: radial-gradient(71.11% 100% at 50% 0%, #020204 14.6%, #011F35 100%);
+  min-height: 100vh;
+
+
 
 }
 </style>
