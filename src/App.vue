@@ -1,7 +1,6 @@
 <template>
   <BaseCard>
-    <h1>Überschrift</h1>
-    <p>Dies ist ein Beispieltext</p>
+    
   </BaseCard>
 </template>
 
@@ -9,6 +8,7 @@
 // import HelloWorld from './components/HelloWorld.vue' // Beispiel für import
 import BaseCard from './components/BaseCard.vue';
 import { stockService } from '@/services/stockService';
+
 
 export default {
   
@@ -24,15 +24,20 @@ export default {
 </script>
 
 <style>
+
+
+
+/* Globaler Body Style */
 body {
-  margin: 0;  
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
-#app {  
+#app {
   width: 100vw;
   min-height: 100vh;
   background: radial-gradient(71.11% 100% at 50% 0%, #020204 14.6%, #011F35 100%);
-  padding: 100px;
   box-sizing: border-box;
 }
 </style>
+

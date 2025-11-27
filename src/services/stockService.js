@@ -5,7 +5,7 @@ const order = [];
 class StockService {
     constructor() {
         this.apiClient = axios.create({
-            baseURL: 'https://sheetdb.io/api/v1/jjaha8pp1o6rf'
+            baseURL: 'https://sheetdb.io/api/v1/jjaha8pp1o6rf' // example adress
         });
     }
 
