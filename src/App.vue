@@ -1,20 +1,24 @@
 <template>
-  <BaseCard>
-    
-  </BaseCard>
+  <BaseCard></BaseCard>
+  <SecondCard></SecondCard>
+  <RevenueCard></RevenueCard>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue' // Beispiel für import
 import BaseCard from './components/BaseCard.vue';
 import { stockService } from '@/services/stockService';
+import SecondCard from './components/SecondCard.vue';
+import RevenueCard from './components/RevenueCard.vue';
 
 
 export default {
   
   name: 'App',
   components: {
-    BaseCard
+    BaseCard,
+    SecondCard,
+    RevenueCard,
   },
   async created() {
     this.data = await stockService.getRevenue('$AAPL'); //fetchData
