@@ -16,8 +16,7 @@
                 <img class="revenueGrowthDiagramm" src="@/assets/graphs/revenueGrowth.png" alt="Grafik Revenue Growth in % YoY">
                 <img class="revenueGrowthLabel" src="@/assets/graphs/revenueGrowthLabel.png" alt="Grafik Label für Revenue Growth in % YoY">
             </div>
-        </div>
-      
+        </div>      
     </div>
     <slot></slot>  
 </template>
@@ -36,13 +35,13 @@
 }
 
 .chartCards {
-  width: 1240px;
+  width: 1288px;
   height: 296px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 32px; 
-  margin-top: 32px;
+  /*gap: 32px; */
+  margin-top: 60px;
   margin-left: 100px;
 }
 

@@ -26,13 +26,13 @@
 }
 
 .cardRevenue {
-  width: 1240px;
+  width: 1288px;
   height: 352px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 32px; 
-  margin-top: 32px;
+  margin-top: 60px;
   margin-left: 100px;
 }
 

@@ -187,14 +187,15 @@
 }
 
 .tickerCard {
-  /*width: 1240px;*/
+  box-sizing: border-box;
+  width: 1288px;
   height: 191px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   background-color: #023A6233;
-  margin-top: 48px;
+  margin-top: 60px;
   margin-left: 100px;
   padding-left: 24px;
   padding-right: 24px;
@@ -248,8 +249,7 @@
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
 
 .valueTicker {
