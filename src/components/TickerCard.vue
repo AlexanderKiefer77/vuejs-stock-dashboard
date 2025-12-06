@@ -187,23 +187,24 @@
 }
 
 .tickerCard {
-  width: 1240px;
+  /*width: 1240px;*/
   height: 191px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*gap: 24px;*/
   border-radius: 20px;
   background-color: #023A6233;
   margin-top: 48px;
   margin-left: 100px;
+  padding-left: 24px;
+  padding-right: 24px;
+  gap: 24px;
 }
 
 .tickerFrame {
   width: 173px;
   height: 130px;
   border-radius: 16px;
-  margin-left: 24px; /*für Abstand zwischen einzelnen Karten*/
   padding-left: 12px;
   color: #FFFFFF;
   background-color: #011F35;

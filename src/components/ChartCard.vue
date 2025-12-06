@@ -2,22 +2,19 @@
     <div class="chartCards">    
         <div class="netIncomeTTM">
             <h2>Net Income TTM</h2>
-            <div class="netIncomeTTMGraph">
-                Grafik einfügen
-            </div>
+            <img src="@/assets/graphs/netIncomeTTM.png" alt="Grafik Net Income TTM">
         </div>
 
         <div class="grossMargin">
             <h2>Gross Margin in % LQ</h2>
-            <div class="grossMarginGraph">
-                Grafik einfügen
-            </div>
+            <img src="@/assets/graphs/grossMargin.png" alt="Grafik Gross Margin in % LQ">
         </div>
 
         <div class="revenueGrowth">
             <h2>Revenue Growth in % YoY</h2>
             <div class="revenueGrowthGraph">
-                Grafik einfügen
+                <img class="revenueGrowthDiagramm" src="@/assets/graphs/revenueGrowth.png" alt="Grafik Revenue Growth in % YoY">
+                <img class="revenueGrowthLabel" src="@/assets/graphs/revenueGrowthLabel.png" alt="Grafik Label für Revenue Growth in % YoY">
             </div>
         </div>
       
@@ -49,8 +46,7 @@
   margin-left: 100px;
 }
 
-
-
+/* #################################################### */
 .netIncomeTTM {
     width: 392px;
     height: 296px;
@@ -73,14 +69,12 @@
     color: #FFFFFF;
 }
 
-.netIncomeTTMGraph {
+.netIncomeTTM img {
     width: 352px;
     height: 215px;
-    background-color: cornflowerblue;
 }
 
-
-
+/* #################################################### */
 .grossMargin {
     width: 293px;
     height: 296px;
@@ -103,14 +97,12 @@
     color: #FFFFFF;
 }
 
-.grossMarginGraph {
+.grossMargin img {
     width: 253px;
     height: 209px;
-    background-color: cornflowerblue;
 }
 
-
-
+/* #################################################### */
 .revenueGrowth {
     width: 491px;
     height: 296px;
@@ -134,9 +126,21 @@
 }
 
 .revenueGrowthGraph {
+    display: flex;
+    align-items: center;
     width: 451px;
     height: 209px;
-    background-color: cornflowerblue;
+    gap: 16px;
+}
+
+.revenueGrowthDiagramm {
+    width: 354px;
+    height: 209px;
+}
+
+.revenueGrowthLabel {
+    width: 72px;
+    height: 66px;
 }
 
 </style>

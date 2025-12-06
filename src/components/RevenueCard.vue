@@ -2,18 +2,12 @@
     <div class="cardRevenue">    
         <div class="revenueLast3Years">
             <h2>Revenue last 3 years</h2>
-            <div class="revenueLast3YearsGraph">
-                Grafik einfügen
-            </div>
+            <img src="@/assets/graphs/graphicLabel.png" alt="Grafik Revenue last 3 Years">
         </div>
 
         <div class="revenueBreakdownMagnificentSeven">
-            <h2>Revenue Breakdown Magnificent Seven</h2>
-            <div class="revenueBreakdownMagnificentSevenGraph">
-                Grafik einfügen
-            </div>
-        </div>
-      
+            <img src="@/assets/graphs/revenueBreakdown.png" alt="Grafik Revenue Breakdown Magnificent Seven">
+        </div>      
     </div>
     <slot></slot>  
 </template>
@@ -32,7 +26,6 @@
 }
 
 .cardRevenue {
-    /*background-color: aqua;*/
   width: 1240px;
   height: 352px;
   display: flex;
@@ -43,6 +36,7 @@
   margin-left: 100px;
 }
 
+/* #################################################### */
 .revenueLast3Years {
     width: 714px;
     height: 352px;
@@ -65,12 +59,12 @@
     color: #FFFFFF;
 }
 
-.revenueLast3YearsGraph {
+.revenueLast3Years img {
     width: 650px;
     height: 270px;
-    background-color: cornflowerblue;
 }
 
+/* #################################################### */
 .revenueBreakdownMagnificentSeven {
     width: 494px;
     height: 352px;
@@ -83,20 +77,9 @@
     gap: 20px;
 }
 
-.revenueBreakdownMagnificentSeven h2 {
-    margin: 0;
-    width: 385px;
-    height: 20px;
-    font-size: 20px;
-    font-weight: 600;
-    font-style: bold;
-    color: #FFFFFF;
-}
-
-.revenueBreakdownMagnificentSevenGraph {
+.revenueBreakdownMagnificentSeven img {
     width: 396px;
-    height: 260px;
-    background-color: cornflowerblue;
+    height: 300px;
 }
 
 </style>
