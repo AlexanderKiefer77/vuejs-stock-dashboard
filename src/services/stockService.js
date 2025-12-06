@@ -22,6 +22,10 @@ class StockService {
     async getRevenue(sheetName) {
         const data = await this.fetchData(sheetName);
 
+        if (!Array.isArray(data) || !data[5]) {
+        console.error("Fehler: data[5] existiert nicht oder die Datenstruktur stimmt nicht:", data);
+        return [];
+        }
         order.length = 0; // leeren
         order.push(...Object.values(data[5]));
         return order;
